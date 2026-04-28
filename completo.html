@@ -5,16 +5,41 @@
     <title>Menu completo - Al Mulino</title>
     <style>
         body { font-family: 'Georgia', serif; padding: 20px; background: #fff5f0; color: #2d3436; line-height: 1.6; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .container { max-width: 900px; margin: auto; background: lightgray; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         h1 { color: #d35400; text-align: center; border-bottom: 2px solid #d35400; padding-bottom: 10px; }
-        h2 { color: #e67e22; border-bottom: 1px solid #eee; margin-top: 35px; background: #fef5ef; padding: 5px 15px; border-radius: 5px; }
+        h2 { 
+            color: #d35400; 
+            border-bottom: 2px solid #d35400; 
+            margin-top: 40px; 
+            background: transparent; 
+            padding: 5px 0; 
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
         .dish { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; padding: 10px; transition: 0.3s; }
         .dish:hover { background-color: #fff9e6; transform: scale(1.01); border-radius: 5px; }
         .dish-info { flex: 1; }
         .dish-name { font-weight: bold; font-size: 1.1em; display: block; }
         .desc { font-style: italic; font-size: 0.9em; color: #666; }
         .price { font-weight: bold; color: #d35400; margin-left: 15px; font-size: 1.1em; }
-        .back { display: inline-block; margin-top: 40px; padding: 12px 25px; background: #2980b9; color: white !important; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        
+        /* PULSANTE TORNA ALLA HOME COORDINATO */
+        .back { 
+            display: inline-block; 
+            margin-top: 40px; 
+            padding: 12px 25px; 
+            background: #d35400; /* Stesso arancione dei titoli */
+            color: white !important; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .back:hover {
+            background: #a04000; /* Una tonalità leggermente più scura al passaggio del mouse */
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
