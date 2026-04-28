@@ -2,18 +2,38 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Menu vegano - Al Mulino</title>
+    <title>Menu Vegano - Al Mulino</title>
     <style>
-        body { font-family: 'Georgia', serif; padding: 20px; background: #f9fdf9; color: #2d3436; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        h1 { color: #2ecc71; text-align: center; border-bottom: 2px solid #2ecc71; padding-bottom: 10px; }
-        h2 { color: #1abc9c; border-bottom: 1px solid #eee; margin-top: 30px; }
+        body { font-family: 'Georgia', serif; padding: 20px; background: #f9fdf9; color: #2d3436; line-height: 1.6; }
+        
+        .container { max-width: 800px; margin: auto; background: lightgray; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        h1 { color: #16a085; text-align: center; border-bottom: 2px solid #16a085; padding-bottom: 10px; }
+        
+        /* Titoli sezioni trasparenti e puliti */
+        h2 { 
+            color: #16a085; 
+            background: transparent; 
+            border-bottom: 2px solid #16a085; 
+            margin-top: 40px; 
+            padding: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.4rem;
+        }
+
         .dish { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 15px; padding: 10px; transition: 0.3s; }
-        .dish:hover { background-color: #fff9e6; transform: scale(1.02); border-radius: 5px; }
+        
+        /* Effetto hover coerente */
+        .dish:hover { background-color: rgba(22, 160, 133, 0.1); transform: scale(1.01); border-radius: 5px; }
+        
         .dish-info { flex: 1; }
         .dish-name { font-weight: bold; font-size: 1.1em; display: block; }
-        .price { font-weight: bold; color: #2ecc71; margin-left: 15px; }
-        .back { display: inline-block; margin-top: 30px; padding: 10px 20px; background: #2980b9; color: white !important; text-decoration: none; border-radius: 5px; }
+        .desc { font-style: italic; font-size: 0.9em; color: #555; }
+        .price { font-weight: bold; color: #16a085; margin-left: 15px; font-size: 1.1em; }
+        
+        .back { display: inline-block; margin-top: 30px; padding: 12px 25px; background: #16a085; color: white !important; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .back:hover { background: #117a65; }
     </style>
 </head>
 <body>
@@ -21,11 +41,23 @@
         <h1>🌱 Selezione Vegana</h1>
         
         <h2>Piatti e Contorni</h2>
-        <div class="dish"><div class="dish-info"><span class="dish-name">Spaghetti alla Calabra (Veg)</span><span class="desc">Senza alici: aglio, olio, pinoli e pane tostato</span></div><span class="price">€ 9,00</span></div>
+        <div class="dish">
+            <div class="dish-info">
+                <span class="dish-name">Spaghetti alla Calabra (Veg)</span>
+                <span class="desc">Senza alici: aglio, olio, pinoli e pane tostato</span>
+            </div>
+            <span class="price">€ 9,00</span>
+        </div>
         <div class="dish"><div class="dish-info"><span class="dish-name">Cicoria Ripassata in Padella</span></div><span class="price">€ 4,50</span></div>
         <div class="dish"><div class="dish-info"><span class="dish-name">Patate Silane al Rosmarino</span></div><span class="price">€ 4,50</span></div>
         <div class="dish"><div class="dish-info"><span class="dish-name">Cubetti di Zucca in Agrodolce</span></div><span class="price">€ 5,00</span></div>
-        <div class="dish"><div class="dish-info"><span class="dish-name">Insalatina Invernale (Veg)</span><span class="desc">Senza alici: verza, mele e noci</span></div><span class="price">€ 5,00</span></div>
+        <div class="dish">
+            <div class="dish-info">
+                <span class="dish-name">Insalatina Invernale (Veg)</span>
+                <span class="desc">Senza alici: verza, mele e noci</span>
+            </div>
+            <span class="price">€ 5,00</span>
+        </div>
 
         <h2>Bevande</h2>
         <div class="dish"><div class="dish-info"><span class="dish-name">Acqua Minerale (0.75cl)</span></div><span class="price">€ 2,50</span></div>
