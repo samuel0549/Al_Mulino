@@ -20,19 +20,20 @@
         
         .container { max-width: 1100px; margin: auto; padding: 0 20px; }
         
+	/* Sezione Info & Maps - Sfondo lightgray integrato */
+        .info-section { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; margin-top: 50px; background: lightgray; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .map-container { border: 1px solid #bbb; border-radius: 8px; overflow: hidden; background: #ddd; }
+        .hours-list { list-style: none; padding: 0; }
+        .hours-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #bbb; }
+        .closed { color: #d63031; font-weight: bold; }
+
+
         /* Sezione Menu */
         .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
         .card { background: lightgray; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; padding-bottom: 20px; display: flex; flex-direction: column; }
         .card img { width: 100%; height: 200px; object-fit: cover; }
         .card h3 { color: #27ae60; margin: 15px 0 5px; }
         .btn-blue { background: #2980b9; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; font-weight: bold; }
-
-        /* Sezione Info & Maps - Sfondo lightgray integrato */
-        .info-section { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; margin-top: 50px; background: lightgray; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .map-container { border: 1px solid #bbb; border-radius: 8px; overflow: hidden; background: #ddd; }
-        .hours-list { list-style: none; padding: 0; }
-        .hours-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #bbb; }
-        .closed { color: #d63031; font-weight: bold; }
 
         /* Footer e Griglia Social */
         footer { background:#2d3436; color:white; text-align:center; padding:40px 0; margin-top:0; }
@@ -49,30 +50,6 @@
 <div class="hero">
     <div><h1>Tradizione e Gusto Genuino</h1><p>Vieni a trovarci nel cuore della Calabria</p></div>
 </div>
-
-<div class="main-content">
-    <div class="container">
-        <h2 style="text-align:center; margin-top:0;">I Nostri Menu</h2>
-        <div class="menu-grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600" alt="Menu vegetariano">
-                <h3>Menu Vegetariano</h3>
-                <p>Il meglio dell'orto a KM 0.</p>
-                <a href="vegetariano.html" class="btn-blue">Esplora Contenuti</a>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=600" alt="Menu completo">
-                <h3>Menu Completo</h3>
-                <p>La vera cucina del territorio.</p>
-                <a href="completo.html" class="btn-blue">Esplora Contenuti</a>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=600" alt="Menu vegano">
-                <h3>Menu Vegano</h3>
-                <p>Creatività 100% vegetale.</p>
-                <a href="vegano.html" class="btn-blue">Esplora Contenuti</a>
-            </div>
-        </div>
 
         <div class="info-section">
             <div class="map-container">
@@ -97,6 +74,30 @@
                 <div style="margin-top: 20px; padding: 15px; background: #ddd; border-radius: 8px; border: 1px solid #bbb; text-align: center;">
                     <strong style="color: #d35400;">Servizio e Coperto: € 2,50</strong>
                 </div>
+            </div>
+        </div>
+
+<div class="main-content">
+    <div class="container">
+        <h2 style="text-align:center; margin-top:0;">I Nostri Menu</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600" alt="Menu vegetariano">
+                <h3>Menu Vegetariano</h3>
+                <p>Il meglio dell'orto a KM 0.</p>
+                <a href="vegetariano.html" class="btn-blue">Esplora Contenuti</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=600" alt="Menu completo">
+                <h3>Menu Completo</h3>
+                <p>La vera cucina del territorio.</p>
+                <a href="completo.html" class="btn-blue">Esplora Contenuti</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=600" alt="Menu vegano">
+                <h3>Menu Vegano</h3>
+                <p>Creatività 100% vegetale.</p>
+                <a href="vegano.html" class="btn-blue">Esplora Contenuti</a>
             </div>
         </div>
     </div>
